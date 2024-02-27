@@ -1,8 +1,12 @@
 package com.challenge.arefver1.model.entities;
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Data;
+import lombok.ToString;
 
 @Data
+@ToString
+@Builder
 @Entity
 @Table(name = "user")
 public class User {

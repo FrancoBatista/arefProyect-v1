@@ -1,23 +1,20 @@
-package com.challenge.arefver1.model.entities;
-import jakarta.persistence.*;
+package com.challenge.arefver1.model.dto;
+
 import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 @Data
-@Entity
 @ToString
 @Builder
-@Embeddable
-@Table(name="company")
-public class Company {
-
-    @Id
+public class CompanyDto implements Serializable {
     private Long id;
-    @Column
+
     private String name;
-    @Column
+
     private String catchPhrase;
-    @Column
+
     private String bs;
 }

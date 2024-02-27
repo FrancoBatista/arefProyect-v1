@@ -1,9 +1,13 @@
 package com.challenge.arefver1.model.entities;
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Data;
+import lombok.ToString;
 
 @Data
 @Entity
+@ToString
+@Builder
 @Embeddable
 @Table(name = "address")
 public class Address {

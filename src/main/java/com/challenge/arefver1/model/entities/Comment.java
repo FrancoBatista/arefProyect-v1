@@ -4,6 +4,8 @@ import lombok.*;
 
 @Data
 @Entity
+@ToString
+@Builder
 @Table(name= "comments")
 public class Comment {
     @Id
